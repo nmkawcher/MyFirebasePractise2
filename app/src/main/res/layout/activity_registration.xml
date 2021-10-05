@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".RegistrationActivity">
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/TextInputLayoutStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_above="@id/textinput1"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/white"
+        >
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/name_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Name"
+            android:inputType="text" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/TextInputLayoutStyle"
+        android:id="@+id/textinput1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_above="@id/text_input2"
+        android:layout_marginEnd="20dp"
+        android:background="@color/white"
+        >
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/email_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:inputType="text" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/text_input2"
+        style="@style/TextInputLayoutStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/text_input_confirm"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:background="@color/white"
+        >
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/password_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:inputType="numberDecimal"
+
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/text_input_confirm"
+        style="@style/TextInputLayoutStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/btn_login"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:background="@color/white"
+        >
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/c_password_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Confirm Password"
+            android:inputType="numberDecimal"
+
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+   <!-- <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:hint="Email"
+        android:id="@+id/email_et"
+        android:layout_margin="10dp"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:hint="Password"
+        android:id="@+id/password_et"
+        android:layout_margin="10dp"
+        />-->
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:minWidth="140dp"
+        android:layout_margin="20dp"
+        android:textColor="@color/white"
+        android:background="@drawable/green_rect_circular_radious"
+        android:id="@+id/btn_registration"
+        />
+
+    <TextView
+        android:id="@+id/tv_login"
+
+        android:layout_width="wrap_content"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_height="wrap_content"
+        android:text="already have an account?Login"
+        />
+</LinearLayout>
